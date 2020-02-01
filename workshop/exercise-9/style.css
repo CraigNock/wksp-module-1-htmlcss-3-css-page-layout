@@ -4,10 +4,46 @@ body {
 
 .nav {
     background-color: #383737;
+    position: relative;
+    display: inline-block;
+    width: 100vw;
 }
 
 .nav-dropdown {
     color: #fff;
     text-decoration: none;
     display: inline-block;
+}
+
+
+
+.dropmenu{
+    display: none;
+    position: absolute;
+    background-color: blue;
+    
+    list-style: none;
+    z-index: 1;
+    margin: 0;
+
+}
+
+li{
+    text-align: center;
+}
+
+.item {
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+
+}
+
+.nav:hover .dropmenu {
+    display: block;
+}
+
+.nav:hover .nav-dropdown {
+    cursor: text;
 }
