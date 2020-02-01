@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    padding: 0;
 }
 
 .nav {
@@ -13,6 +14,8 @@ body {
     color: #fff;
     text-decoration: none;
     display: inline-block;
+    font-size: large;
+    padding: 2vh
 }
 
 
@@ -20,30 +23,33 @@ body {
 .dropmenu{
     display: none;
     position: absolute;
-    background-color: blue;
-    
+    background-color: rgb(57, 175, 253);
     list-style: none;
+    margin: 0;
     z-index: 1;
     margin: 0;
+    padding: 0;
 
 }
 
-li{
-    text-align: center;
-}
 
 .item {
     display: block;
     color: white;
-    text-align: center;
     text-decoration: none;
-
+    font-size: large;
+    padding: 2vh;
 }
 
 .nav:hover .dropmenu {
-    display: block;
+    display: block
+
 }
 
 .nav:hover .nav-dropdown {
+    cursor: text;
+}
+
+.item:hover{
     cursor: text;
 }
