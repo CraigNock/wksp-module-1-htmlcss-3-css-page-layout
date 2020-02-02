@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    font-family: Poppins, sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 .header {
@@ -34,6 +34,7 @@ body {
 .checkbox-label {
     display: block;
     text-align: left;
+    
 }
 
 label{
@@ -55,6 +56,8 @@ label{
 
 select {
     margin-left: 10px;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 3px;
 }
 
 textarea {
@@ -67,7 +70,7 @@ textarea {
 }
 
 .form-button {
-    font-family: Poppins, sans-serif;
+    font-family: 'Poppins', sans-serif;
     border: 2px solid lightskyblue;
     background-color: white;
     padding: 1vh 2vw;
