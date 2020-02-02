@@ -29,7 +29,7 @@ h3 {
 }
 
 /* Using CSS grid */
-.links {
+/* .links {
   display: grid;
   grid-template-columns: auto auto auto auto;
   list-style: none;
@@ -41,7 +41,7 @@ h3 {
   padding: 15px;
   text-align: center;
   margin: 5px 10px;
-}
+} */
 
 /* 
     Using Flexbox
@@ -49,7 +49,7 @@ h3 {
 */
 
 
-/* .links {
+.links {
   display: flex;
   justify-content: space-between;
   list-style: none;
@@ -67,7 +67,7 @@ h3 {
 
 li:last-child {
   margin-right: 0px;
-} */
+}
 
 
 .links a {
