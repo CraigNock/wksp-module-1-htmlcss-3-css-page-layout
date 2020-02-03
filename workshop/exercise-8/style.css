@@ -19,6 +19,7 @@ body {
   100%{transform: translate(0); opacity: 1}
 }
 
+/* Button */
 .cool {
   color: white;
   background-color: rgb(55, 190, 214);

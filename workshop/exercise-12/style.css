@@ -27,7 +27,9 @@ body {
     width: 30vw;
     border: 1px solid lightskyblue;
     border-radius: 3px;
-    
+    font-family: 'Poppins', sans-serif;
+    font-size: .7rem ;
+    padding: .5rem 0;
 }
 
 .radio-label,
@@ -67,6 +69,7 @@ textarea {
     width: 75vw;
     height: 7vh;
     border: none;
+    font-family: 'Poppins', sans-serif;
 }
 
 .form-button {
