@@ -39,7 +39,7 @@ The same site on a mobile device
 
 ## A Quick Fix?
 
-Add the following to your HTML page(s)
+Add the following to your HTML page(s) (in the head)
 
 `<meta name="viewport" content="width=device-width, initial-scale=1.0" />`
 
@@ -115,8 +115,35 @@ Media queries can be used to check many things, such as:
 
 [Try it](https://www.w3schools.com/css/tryit.asp?filename=trycss_mediaqueries_ex1)
 
+
+mobile first you would use min-width instead of max width
+
+bootstrap (does all the responsiveness) can be useful, but super heavy. learn doing it yourself first.
+not neccessarily optimized to interact with things like react etc
+
 ---
 
+CSS combinators
+sometimes need more convuluted targeting method
+
+-adjacet sibling combinator: div+p
+
+-general sibling combinator: div ~ p
+
+-child combinator: div > p
+
+-descendant combinator: div p
+
+not common, but used for menus moreso
+
+cannot target parent with css (can with js)
+
+
+
+
+
+
+---
 # Advanced topics
 
 ---
@@ -125,12 +152,19 @@ Media queries can be used to check many things, such as:
 
 ### [Pseudo classes](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes#Index_of_standard_pseudo-classes)
 
-- `:hover`
-- `:focus`
-- `:checked`
-- `:first-child`
+- `:hover` hover over gives effect
+- `:focus`  whatever div click gets an effect
+- `:checked` effect when checked (minor)
+- `:first-child` eg: unordered list, we want the first one to always be green
 
 [Try it](https://www.w3schools.com/css/tryit.asp?filename=trycss_link)  |  [Try it](https://www.w3schools.com/css/tryit.asp?filename=trycss_first-child2)
+
+
+no space( p:hover{}, .class:first-child{} )
+
+Note: a:hover MUST come after a:link and a:visited in the CSS definition in order to be effective.
+
+Note: a:active MUST come after a:hover in the CSS definition in order to be effective.
 
 ---
 
@@ -138,6 +172,8 @@ Media queries can be used to check many things, such as:
 
 - `::before`
 - `::after`
+
+useful, but probably later on
 
 [Try it](https://www.w3schools.com/css/tryit.asp?filename=trycss_before)
 
@@ -152,4 +188,8 @@ Media queries can be used to check many things, such as:
 [Try it](https://www.w3schools.com/cssref/tryit.asp?filename=trycss3_transform) | [Trnasform Generator](https://html-css-js.com/css/generator/transform/)
 
 ---
+to "animate" transformation example
 
+transition: all linear 500ms;
+
+^on :hover etc, element style with have eg-> transform: rotate(90)

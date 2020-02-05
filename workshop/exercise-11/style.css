@@ -1,22 +1,27 @@
 .header {
-
+  text-align: center;
 }
 
 .facts {
-
+  width: 100vw;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  border-spacing: 0;
+  padding: 20px;
 }
 
-tr {
-
+tr:nth-child(even){
+  background-color: lightgray;
 }
 
 th {
-
+  
 }
 
 td,
 th {
-
+  text-align: left;
+  padding: 5px;
 }
 
 h3 {
@@ -24,27 +29,48 @@ h3 {
 }
 
 /* Using CSS grid */
-.links {
+/* .links {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  list-style: none;
+  padding: 0;
 }
 
 .links > li {
-}
+  background-color: rgb(82, 159, 247);
+  padding: 15px;
+  text-align: center;
+  margin: 5px 10px;
+} */
 
 /* 
     Using Flexbox
-    You can comment / uncomment this code using cmd+/
+    You can comment / uncomment this code using ctrl+/
 */
 
-/* 
-.links {
 
+.links {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+  
 }
 
 .links > li {
-
+  background-color: rgb(82, 159, 247);
+  text-align: center;
+  margin-right: 20px;
+  padding: 15px;
+  flex: 1;
 }
-*/
+
+li:last-child {
+  margin-right: 0px;
+}
+
 
 .links a {
-
+  color: white;
+  text-decoration: none;
 }
